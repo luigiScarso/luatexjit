@@ -22,7 +22,7 @@ and mkiv uses lua to   manage files. So it's very likely that some
 lua files of the distro must be modified to match luajit.
 
 
-2) even if miv is still under active development, 
+2) even if mkiv is still under active development, 
 some parts are already optimized, and, in any case, the hard work is done by the core tex, where
 luajit has no effect. So it's likely that  on average there will be only small improvements in speed
 and more or less the memory usage  will be  the same .
