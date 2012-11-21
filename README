@@ -4,7 +4,7 @@ previously configured for TARGET_X86.
 Cross-compilation for Windows and MacOSX are not enabled.
 
 To build the  luatexjit executable:
-$>./build-sh.sh
+$>./build-jit.sh
 
 If all is ok it finishes with  the message
 -rwxrwxrwx 1 foo foo 5759756 nov 21 16:02 build/texk/web2c/luatexjit
