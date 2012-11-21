@@ -1,0 +1,27 @@
+Simple example on alternative uses to Lua table of a fixed size.
+The first two use ffi and a kind of C style, the last one is pure Lua.
+Performance boost seem to be congruent with  http://luajit.org/ext_ffi.html
+
+$>luatexjit --luaonly dejavuserif-jit-array.lua 
+max=60270
+time:0.54
+mem:3987.3232421875 KBytes
+
+$>luatexjit --luaonly dejavuserif-jit-linkedlist.lua 
+max=60270
+time:0.53
+mem:4110.3759765625 KBytes
+
+$>luatexjit --luaonly dejavuserif.lua
+max=60270
+time:3.16
+mem:5628.0478515625 KBytes
+
+$>luatex --luaonly dejavuserif.lua 
+max=60270
+time:46.93
+mem:3257.6455078125 KBytes
+
+
+For more luajit bindings see
+http://wiki.luajit.org/FFI-Bindings

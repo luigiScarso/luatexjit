@@ -1,0 +1,2 @@
+It's the luajit20 folder with only the headers, to avoid to patch 
+the files that  include lua51/*h.

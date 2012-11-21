@@ -1,0 +1,31 @@
+Experimental release of luatexjit , i.e. LuaTeX + LuaJIT.
+It uses  luatex rev. 4486  and luajit 2.0
+previously configured for TARGET_X86.
+Cross-compilation for Windows and MacOSX are not enabled.
+
+To build the  luatexjit executable:
+$>./build-sh.sh
+
+If all is ok it finishes with  the message
+-rwxrwxrwx 1 foo foo 5759756 nov 21 16:02 build/texk/web2c/luatexjit
+
+You need also jit.zip and must be unzipped into a folder 
+reachable by luatexjit.
+
+NOTE:
+it's possible to use luatexjit with ConTeXt mkiv
+(http://wiki.contextgarden.net/Main_Page)
+but keep in mind that:
+
+1) lua and luajit have different command line options
+and mkiv uses lua to   manage files. So it's very likely that some 
+lua files of the distro must be modified to match luajit.
+
+
+2) even if miv is still under active development, 
+some parts are already optimized, and, in any case, the hard work is done by the core tex, where
+luajit has no effect. So it's likely that  on average there will be only small improvements in speed
+and more or less the memory usage  will be  the same .
+
+
+
