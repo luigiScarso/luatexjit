@@ -1,6 +1,8 @@
 Experimental release of luatexjit , i.e. LuaTeX + LuaJIT.
 It uses  luatex rev. 4486  and luajit 2.0
-previously configured for TARGET_X86.
+previously configured for TARGET_X86 
+(currently it *doesn't work* on x86_64)
+
 Cross-compilation for Windows and MacOSX are not enabled.
 
 To build the  luatexjit executable:
