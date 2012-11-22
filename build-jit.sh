@@ -150,7 +150,16 @@ fi
 # get a new svn version header
 ( cd source  ; ./texk/web2c/luatexdir/getluatexsvnversion.sh )
 
+#### ugly hack to compile luajit
+currentdir=$(pwd)
+cd source/texk/web2c/luatexdir/luajit20
+make
+cd $currentdir
+
+###################################
+
 cd "$B"
+
 
 if [ "$ONLY_MAKE" = "FALSE" ]
 then
