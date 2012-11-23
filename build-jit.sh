@@ -224,6 +224,16 @@ then
   PATH=$OLDPATH
 fi
 
+
+#### ugly hack to compile luajit
+currentdir=$(pwd)
+cd source/texk/web2c/luatexdir/luajit20
+make clean
+cd $currentdir
+
+###################################
+
+
 # show the results
 mv "$B"/texk/web2c/$LUATEXEXE "$B"/texk/web2c/$LUATEXEXEJIT
 ls -l "$B"/texk/web2c/$LUATEXEXEJIT
