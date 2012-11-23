@@ -186,7 +186,11 @@ static int luatex_dofile (lua_State *L) {
 void luainterpreter(void)
 {
     lua_State *L;
+    #if LJ_64
+    L = luaL_newstate() ;
+    #else
     L = lua_newstate(my_luaalloc, NULL);
+    #endif
     if (L == NULL) {
         fprintf(stderr, "Can't create the Lua state.\n");
         return;
