@@ -2180,7 +2180,7 @@ call_luatex_LDADD =
 #
 luatex_tests = luatexdir/luatex.test
 libluajit20_a_CPPFLAGS = -I$(top_srcdir)/luatexdir/luajit20 -I$(top_srcdir)/luatexdir/luajit20/host  $(am__append_65)
-libluajit20_a_CFLAGS = -fPIC  -O2 -fomit-frame-pointer -Wall   -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -U_FORTIFY_SOURCE -march=i686 -fno-stack-protector # $(WARNING_CFLAGS)
+libluajit20_a_CFLAGS = -fPIC  -O2 -fomit-frame-pointer -Wall   -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -U_FORTIFY_SOURCE -march=native -fno-stack-protector # $(WARNING_CFLAGS)
 libluajit20_a_CFLAGS_minilua = -O2 -fomit-frame-pointer -Wall -I. -DLUAJIT_TARGET=LUAJIT_ARCH_x86 -DLJ_ARCH_HASFPU=1 -DLJ_ABI_SOFTFP=0
 libluajit20_a_CFLAGS_buildvm = -O2 -fomit-frame-pointer -Wall   -I. -DLUAJIT_TARGET=LUAJIT_ARCH_x86 -DLJ_ARCH_HASFPU=1 -DLJ_ABI_SOFTFP=0
 
