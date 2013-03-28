@@ -1,3 +1,10 @@
+**********************************************
+
+The main site is  now
+https://foundry.supelec.fr/projects/luajittex/
+
+**********************************************
+
 Experimental release of luatexjit , i.e. LuaTeX + LuaJIT.
 It uses  luatex rev. 4486  and luajit 2.0.
 It was tested on Linux x86 and x86_64.
